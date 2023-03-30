@@ -22,6 +22,279 @@ a {
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "League Spartan", sans-serif;
+}
+
+.header {
+  height: 380px;
+  padding-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/assets/images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+/* Este sería las propiedades para movil */
+.top-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 327px;
+  height: 219px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .top-container {
+    flex-direction: row;
+    width: 1110px;
+    /* height: 245px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.box {
+  width: 445px;
+  height: 245px;
+}
+
+/* Este sería las propiedades para movil */
+.title {
+  margin-top: 0;
+  margin-bottom: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 327px;
+  height: 102px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #512051;
+}
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .title {
+    margin-top: 0;
+    width: 445px;
+    text-align: left;
+    height: 154px;
+    font-size: 56px;
+    font-weight: 700;
+    color: #512051;
+  }
+}
+
+/* Este sería las propiedades para movil */
+.text-introduction {
+  width: 327px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  color: #927b91;
+}
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .text-introduction {
+    width: 445px;
+    height: 75px;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 400;
+    color: #927b91;
+  }
+}
+
+/* Este sería las propiedades para movil */
+.valorations {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .valorations {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 540px;
+  }
+}
+
+/* Este sería las propiedades para movil */
+.stars {
+  background-color: #f7f2f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 327px;
+  height: 78px;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .stars {
+    background-color: #f7f2f7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    width: 445px;
+    height: 56px;
+  }
+}
+
+/* Este sería las propiedades para movil */
+.first-star {
+  margin-bottom: 16px;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .first-star {
+    position: relative;
+    left: -95px;
+  }
+}
+
+/* Este sería las propiedades para movil */
+.second-star {
+  margin-bottom: 16px;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .second-star {
+    position: relative;
+    left: -50px;
+  }
+}
+
+.images-stars {
+  display: flex;
+  justify-content: space-evenly;
+  width: 117px;
+  margin-left: 32px;
+}
+
+/* Este sería las propiedades para movil */
+.text-valoration {
   margin: 0;
-  background-image: url(../assets/images/sleep-cat.jpeg);
+  margin-top: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #512051;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .text-valoration {
+    margin-left: 32px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #512051;
+  }
+}
+
+.main {
+  background-image: url(/assets/images/bg-pattern-bottom-desktop.svg);
+  max-width: 1440px;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+/* Este sería las propiedades para movil */
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1013px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 98px;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1110px;
+    height: 266px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 98px;
+  }
+}
+
+.card {
+  width: 350px;
+  height: 234px;
+  background-color: #512051;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.card-colton {
+  position: relative;
+  top: -15px;
+}
+
+.card-anne {
+  position: relative;
+  top: 15px;
+}
+
+.image-profile {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.info-colton {
+  display: flex;
+  align-items: center;
+}
+
+.profile-colton {
+  margin-left: 24px;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.verified-buyer {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #ee69a4;
+}
+
+.text {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: white;
+  line-height: 20px;
 }
