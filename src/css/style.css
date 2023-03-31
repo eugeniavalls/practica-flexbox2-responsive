@@ -28,13 +28,19 @@ body {
 }
 
 .header {
-  height: 380px;
+  height: 750px;
   padding-top: 80px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(/assets/images/bg-pattern-top-desktop.svg);
   background-repeat: no-repeat;
   background-position: top left;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 380px;
+  }
 }
 
 /* Este sería las propiedades para movil */
@@ -44,7 +50,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 327px;
-  height: 219px;
+  /* height: 219px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,7 +68,7 @@ body {
 
 .box {
   width: 445px;
-  height: 245px;
+  /* height: 245px; */
 }
 
 /* Este sería las propiedades para movil */
@@ -73,7 +79,7 @@ body {
   margin-left: auto;
   text-align: center;
   width: 327px;
-  height: 102px;
+  /* height: 102px; */
   font-size: 40px;
   font-weight: 700;
   color: #512051;
@@ -84,7 +90,7 @@ body {
     margin-top: 0;
     width: 445px;
     text-align: left;
-    height: 154px;
+    /* height: 154px; */
     font-size: 56px;
     font-weight: 700;
     color: #512051;
@@ -94,7 +100,7 @@ body {
 /* Este sería las propiedades para movil */
 .text-introduction {
   width: 327px;
-  height: 100px;
+  /* height: 100px; */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -212,11 +218,22 @@ body {
   }
 }
 
+/* Este sería las propiedades para movil */
 .main {
   background-image: url(/assets/images/bg-pattern-bottom-desktop.svg);
   max-width: 1440px;
-  background-position: top right;
+  background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .main {
+    background-image: url(/assets/images/bg-pattern-bottom-desktop.svg);
+    max-width: 1440px;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Este sería las propiedades para movil */
@@ -225,11 +242,9 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 1013px;
-
+  width: 327px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 98px;
 }
 
 /* Este mediaquery seria escritorio) */
@@ -249,20 +264,37 @@ body {
 
 .card {
   width: 350px;
-  height: 234px;
+  /* height: 234px; */
   background-color: #512051;
   border-radius: 8px;
   padding: 32px;
 }
 
+/* Este sería las propiedades para movil */
 .card-colton {
-  position: relative;
-  top: -15px;
+  margin-bottom: 15px;
 }
 
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .card-colton {
+    position: relative;
+    top: -15px;
+  }
+}
+
+/* Este sería las propiedades para movil */
 .card-anne {
-  position: relative;
-  top: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Este mediaquery seria escritorio) */
+@media screen and (min-width: 768px) {
+  .card-anne {
+    position: relative;
+    top: 15px;
+  }
 }
 
 .image-profile {
