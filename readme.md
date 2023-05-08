@@ -1,4 +1,4 @@
-# Título del proyecto
+# Título del proyectos
 
 ![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
 
