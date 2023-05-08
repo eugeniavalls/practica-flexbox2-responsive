@@ -4,7 +4,7 @@
 
 ## Ejemplo en vivo
 
-- [Vista en vivo](URL-de-github-pages-de-este-proyecto)
+- [Vista en vivo](https://eugeniavalls.github.io/practica-flexbox2-responsive/)
 
 
 ## Descripción 📑
